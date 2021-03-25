@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="GunTreeTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="client.diff" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="gen.jdt" target="1.8" />
+      <module name="gumtree-2.1.0.benchmark" target="1.8" />
+      <module name="gumtree-2.1.0.benchmark.jmh" target="1.8" />
+      <module name="gumtree-2.1.0.benchmark.main" target="1.8" />
+      <module name="gumtree-2.1.0.benchmark.test" target="1.8" />
+      <module name="gumtree-2.1.0.client" target="1.8" />
+      <module name="gumtree-2.1.0.client.diff" target="1.8" />
+      <module name="gumtree-2.1.0.client.diff.main" target="1.8" />
+      <module name="gumtree-2.1.0.client.diff.test" target="1.8" />
+      <module name="gumtree-2.1.0.client.main" target="1.8" />
+      <module name="gumtree-2.1.0.client.test" target="1.8" />
+      <module name="gumtree-2.1.0.core" target="1.8" />
+      <module name="gumtree-2.1.0.core.main" target="1.8" />
+      <module name="gumtree-2.1.0.core.test" target="1.8" />
+      <module name="gumtree-2.1.0.dist" target="1.8" />
+      <module name="gumtree-2.1.0.dist.main" target="1.8" />
+      <module name="gumtree-2.1.0.dist.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-antlr" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-antlr.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-antlr.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-json" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-json.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-json.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-php" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-php.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-php.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-r" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-r.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-r.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-xml" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-xml.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3-xml.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.antlr3.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.c" target="1.8" />
+      <module name="gumtree-2.1.0.gen.c.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.c.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.css" target="1.8" />
+      <module name="gumtree-2.1.0.gen.css.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.css.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.jdt" target="1.8" />
+      <module name="gumtree-2.1.0.gen.jdt.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.jdt.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.js" target="1.8" />
+      <module name="gumtree-2.1.0.gen.js.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.js.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.ruby" target="1.8" />
+      <module name="gumtree-2.1.0.gen.ruby.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.ruby.test" target="1.8" />
+      <module name="gumtree-2.1.0.gen.srcml" target="1.8" />
+      <module name="gumtree-2.1.0.gen.srcml.main" target="1.8" />
+      <module name="gumtree-2.1.0.gen.srcml.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

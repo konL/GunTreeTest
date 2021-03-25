@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../gumtree-2.1.0" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/benchmark" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/client" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/client.diff" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/core" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/dist" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.antlr3" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.antlr3-antlr" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.antlr3-json" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.antlr3-php" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.antlr3-r" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.antlr3-xml" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.c" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.css" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.jdt" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.js" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.ruby" />
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/gen.srcml" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../gumtree-2.1.0/core" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../gumtree-2.1.0/core" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
