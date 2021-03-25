@@ -47,78 +47,82 @@ public class test_GumTree2 {
     static Map<String, VariableDeclarationExpr> variableMap_new=JavaParserUtils.variableMap;
     static Map<String, String> callMap_new=JavaParserUtils.nameExprMap;
 
-    public static void main(String[] args) throws Exception {
-        /*
-        比较所有项目
-       每两个版本比较一次
-         */
-        String[] projectName={"TestSet"};
-        //1.取出项目名称
-        for(String name:projectName) {
+//    public static void main(String[] args) throws Exception {
+//        /*
+//        比较所有项目
+//       每两个版本比较一次
+//         */
+//        String[] projectName={"TestSet"};
+//        //1.取出项目名称
+//        for(String name:projectName) {
+//
+//            int index=1;
+//            //2.取出该项目的每一个版本
+//            String[] version = findVer(name);
+//            for (int i = 0; i < version.length - 1; i++) {
+//                //3.每两个版本一组，并且标记上index，1+2=index1，2+3=index2 以此类推
+//                String v1 = version[i];
+//                String v2 = version[i + 1];
+//                //4.取出项目中的每个文件，一组版本之间传入ProjectDiff比较
+//                String FileIndex = "D:\\project\\IdentifierStyle\\data\\JavaFileIndex\\" + name + ".txt";
+//                //根据FileIndex读取
+//                //line:源代码文件位置,只取最后一个字段<xx.java>
+//                BufferedReader br = new BufferedReader(new FileReader(FileIndex));
+//                String line = "";
+//                while ((line = br.readLine()) != null) {
+//                    String filename= line.substring(line.indexOf("ver_final") + "ver_final".length() + 2, line.length());
+//
+////                    String srcFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+name+"\\"+v1+"\\"+filename;
+////                    String dstFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+name+"\\"+v2+"\\"+filename;
+////                    File oldf=new File(srcFile);
+////                    File newf=new File(dstFile);
+////                    if(!oldf.exists() || !newf.exists()){
+////                        continue;
+////                    }
+//                    System.out.println(index+" "+v1+" "+v2+" "+filename);
+//                    Projectdiff(name, v1, v2,filename,index);
+//
+//                }
+//                index++;
+//
+//
+//
+//                   br.close();
+//
+//
+//            }
+//        }
+//
+//    }
+//
+//
+//    /*
+//    获取每个项目的版本号
+//     */
+//    private static String[] findVer(String projectpath) {
+//        List<String> list=new ArrayList<>();
+//        //进入到项目文件夹
+//        //遍历文件夹中的版本文件夹并读取
+//        //要遍历的路径
+//        File file = new File("D:\\project\\IdentifierStyle\\data\\GitProject\\"+projectpath);		//获取其file对象
+//        File[] fs = file.listFiles();	//遍历path下的文件和目录，放在File数组中
+//        for(File f:fs){					//遍历File[]数组
+//            if(f.isDirectory())		//若非目录(即文件)，则打印
+//                list.add(f.getName());
+//
+//        }
+//        String[] version = list.toArray(new String[0]);
+//        return version;
+//    }
+public static void main(String[] args) {
 
-            int index=1;
-            //2.取出该项目的每一个版本
-            String[] version = findVer(name);
-            for (int i = 0; i < version.length - 1; i++) {
-                //3.每两个版本一组，并且标记上index，1+2=index1，2+3=index2 以此类推
-                String v1 = version[i];
-                String v2 = version[i + 1];
-                //4.取出项目中的每个文件，一组版本之间传入ProjectDiff比较
-                String FileIndex = "D:\\project\\IdentifierStyle\\data\\JavaFileIndex\\" + name + ".txt";
-                //根据FileIndex读取
-                //line:源代码文件位置,只取最后一个字段<xx.java>
-                BufferedReader br = new BufferedReader(new FileReader(FileIndex));
-                String line = "";
-                while ((line = br.readLine()) != null) {
-                    String filename= line.substring(line.indexOf("ver_final") + "ver_final".length() + 2, line.length());
 
-//                    String srcFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+name+"\\"+v1+"\\"+filename;
-//                    String dstFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+name+"\\"+v2+"\\"+filename;
-//                    File oldf=new File(srcFile);
-//                    File newf=new File(dstFile);
-//                    if(!oldf.exists() || !newf.exists()){
-//                        continue;
-//                    }
-                    System.out.println(index+" "+v1+" "+v2+" "+filename);
-                    Projectdiff(name, v1, v2,filename,index);
+}
 
-                }
-                index++;
-
-
-
-                   br.close();
-
-
-            }
-        }
-
-    }
-
-
-    /*
-    获取每个项目的版本号
-     */
-    private static String[] findVer(String projectpath) {
-        List<String> list=new ArrayList<>();
-        //进入到项目文件夹
-        //遍历文件夹中的版本文件夹并读取
-        //要遍历的路径
-        File file = new File("D:\\project\\IdentifierStyle\\data\\GitProject\\"+projectpath);		//获取其file对象
-        File[] fs = file.listFiles();	//遍历path下的文件和目录，放在File数组中
-        for(File f:fs){					//遍历File[]数组
-            if(f.isDirectory())		//若非目录(即文件)，则打印
-                list.add(f.getName());
-
-        }
-        String[] version = list.toArray(new String[0]);
-        return version;
-    }
-
-    public static void Projectdiff(String projectname,String oldVer,String newVer,String filename,int index) throws Exception {
+    public static void Projectdiff(String projectname,String change,String oldCom,String newCom,String filename) throws Exception {
         //测试源代码文件
-//        String srcFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\code_v1.java";
-//        String dstFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\code_v2.java";
+        String srcFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\code_v1.java";
+        String dstFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\code_v2.java";
 //        String srcFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\funfile_old.java";
 //        String dstFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\funcfile_new.java";
 //        String srcFile = "D:\\kon_data\\JAVA_DATA\\GunTreeTest\\src\\main\\resources\\myfile.java";
@@ -126,10 +130,13 @@ public class test_GumTree2 {
 
         /*
         srcFile:历史文件位置
+
         dstFile：比较文件位置
          */
-        String srcFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+projectname+"\\"+oldVer+"\\"+filename;
-        String dstFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+projectname+"\\"+newVer+"\\"+filename;
+//        String srcFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+projectname+"\\"+oldVer+"\\"+filename;
+//        String dstFile = "D:\\project\\IdentifierStyle\\data\\GitProject\\"+projectname+"\\"+newVer+"\\"+filename;
+//        String srcFile = "D:\\project\\IdentifierStyle\\data\\VersionDB\\ver_old\\"+oldCom+"_"+change+"_"+filename;
+//        String dstFile = "D:\\project\\IdentifierStyle\\data\\VersionDB\\ver_new\\"+newCom+"_"+change+"_"+filename;
 
         /*
         （一）比较oldVer和newVer的不同，存储为changeContext
@@ -148,7 +155,7 @@ public class test_GumTree2 {
                 matcher.getMappings());
         actionGenerator.generate();
         List<Action> actions = actionGenerator.getActions();
-
+        int index=0;
         for(Action act : actions) {
             //格式化输出方式
             //Optype,ASTNodeType,Label,content
